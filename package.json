@@ -1,0 +1,56 @@
+{
+  "name": "gitlab-npm-audit-fix",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This GitLab CI CLI runs npm audit fix and creates a merge request",
+  "author": "Feng Yu <f3n67u@outlook.com>",
+  "license": "MIT",
+  "bin": {
+    "gitlab-npm-audit-fix": "./dist/cli.mjs"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "start": "node ./dist/cli.mjs --help",
+    "dev": "tsup --watch",
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "npm run lint -- --fix",
+    "lint-staged": "lint-staged",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@gitbeaker/rest": "^41.2.2",
+    "hosted-git-info": "^9.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.0.0",
+    "@types/hosted-git-info": "^3.0.5",
+    "@types/node": "^25.0.3",
+    "bumpp": "^10.3.2",
+    "eslint": "^9.0.0",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^4.0.16"
+  }
+}

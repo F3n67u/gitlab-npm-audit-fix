@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+
+# Generated / lock files
+package-lock.json
+
+# Logs
+*.log
+
+# Temp files
+tmp/
+temp/
+*.tmp

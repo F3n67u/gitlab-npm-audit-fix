@@ -1,0 +1,42 @@
+{
+  "added": [{ "name": "xo", "version": "0.38.0" }],
+  "removed": [{ "name": "@gitlab/ui", "version": "29.2.0" }],
+  "updated": [
+    {
+      "name": "minimist",
+      "version": "1.2.4",
+      "location": "foo/node_modules/minimist",
+      "previousVersion": "1.2.1",
+      "severity": null,
+      "title": null,
+      "url": null
+    },
+    {
+      "name": "mocha",
+      "version": "1.4.3",
+      "location": null,
+      "previousVersion": "1.3.0",
+      "severity": "Low",
+      "title": "Prototype Pollution",
+      "url": "https://npmjs.com/advisories/1179"
+    }
+  ],
+  "packageCount": 4,
+  "packageUrls": {
+    "mocha": {
+      "name": "mocha",
+      "url": "https://github.com/mochajs/mocha",
+      "type": "github"
+    },
+    "minimist": {
+      "name": "minimist",
+      "url": "https://github.com/substack/minimist",
+      "type": "github"
+    },
+    "@gitlab/ui": {
+      "name": "@gitlab/ui",
+      "url": "https://gitlab.com/gitlab-org/gitlab-ui",
+      "type": "gitlab"
+    }
+  }
+}
