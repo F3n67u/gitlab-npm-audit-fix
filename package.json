@@ -49,7 +49,7 @@
     "lint-staged": "lint-staged",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "version-packages": "changeset version",
+    "version-packages": "changeset version && npm install --package-lock-only --ignore-scripts",
     "release": "changeset publish",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
