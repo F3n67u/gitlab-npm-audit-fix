@@ -3,8 +3,29 @@
   "type": "module",
   "version": "1.0.0",
   "description": "This GitLab CI CLI runs npm audit fix and creates a merge request",
+  "keywords": [
+    "gitlab",
+    "gitlab-ci",
+    "npm",
+    "npm-audit",
+    "npm-audit-fix",
+    "security",
+    "merge-request",
+    "dependency-update"
+  ],
+  "homepage": "https://github.com/F3n67u/gitlab-npm-audit-fix#readme",
+  "bugs": {
+    "url": "https://github.com/F3n67u/gitlab-npm-audit-fix/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/F3n67u/gitlab-npm-audit-fix.git"
+  },
   "author": "Feng Yu <f3n67u@outlook.com>",
   "license": "MIT",
+  "engines": {
+    "node": ">=20.17.0"
+  },
   "bin": {
     "gitlab-npm-audit-fix": "./dist/cli.mjs"
   },
