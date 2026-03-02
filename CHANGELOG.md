@@ -1,5 +1,14 @@
 # gitlab-npm-audit-fix
 
+## 1.0.1
+
+### Patch Changes
+
+- 5bca11a: Improve npm package metadata for discoverability and maintenance.
+  - add `repository`, `bugs`, and `homepage` links
+  - refine npm `keywords` for better search relevance
+  - declare Node.js engine requirement in package metadata
+
 ## 1.0.0
 
 ### Major Changes
