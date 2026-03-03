@@ -1,5 +1,9 @@
 # gitlab-npm-audit-fix
 
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/F3n67u/gitlab-npm-audit-fix/ci.yml?branch=main)](https://github.com/F3n67u/gitlab-npm-audit-fix/actions/workflows/ci.yml?query=branch%3Amain)
+[![npm](https://img.shields.io/npm/v/gitlab-npm-audit-fix.svg)](https://www.npmjs.com/package/gitlab-npm-audit-fix)
+[![GitHub Release](https://img.shields.io/github/release/F3n67u/gitlab-npm-audit-fix)](https://github.com/F3n67u/gitlab-npm-audit-fix/releases)
+
 This GitLab CI CLI runs `npm audit fix` and creates or updates a merge request.
 
 GitLab-oriented TypeScript port of the GitHub Action [`ybiquitous/npm-audit-fix-action`](https://github.com/ybiquitous/npm-audit-fix-action).
